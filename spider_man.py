@@ -1,9 +1,6 @@
 #-*- coding: UTF-8 -*-
 #爬取BT0上的电影资源
 
-
-
-
 import re
 import requests
 from bs4 import BeautifulSoup
@@ -11,7 +8,7 @@ import os
 
 
 
-BASE_PAGE_URL = 'http://bt0.com/film-download/1-4-4-0-3-'
+BASE_PAGE_URL = 'http://bt0.com/film-download/1-0-0-0-0-'
 PAGE_URL_LIST = []
 for x in range(0,1):
 	url = BASE_PAGE_URL + str(x) + '.html'
