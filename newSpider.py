@@ -1,12 +1,6 @@
 #-*- coding: UTF-8 -*-
-import pymysql
-import re
-import os
-import pandas as pd
-import time
-import threading
-from multiprocessing import Pool, cpu_count
 
+import re
 import requests
 from bs4 import BeautifulSoup
 
@@ -18,7 +12,7 @@ def get_urls():
     http://bt0.com/film-download/1-0-0-0-0-1.html
     http://bt0.com/film-download/1-0-0-0-0-1018.html
     '''
-    page_urls = ['http://bt0.com/film-download/1-0-0-0-0-{cnt}.html'.format(cnt=cnt) for cnt in range(0, 1)]
+    page_urls = ['http://bt0.com/film-download/1-0-0-0-0-{cnt}.html'.format(cnt=cnt) for cnt in range(1, 2)]
     print("Please wait for second ...")
     movie_urls =[]
     for page_url in page_urls:                                      #在每个页面爬取所有电影的地址
