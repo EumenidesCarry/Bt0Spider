@@ -1,3 +1,3 @@
 # 电影爬虫
 爬取http://bt0.com/ 电影资源
-![](img/run.png)
+![](img/run.jpg)
